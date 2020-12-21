@@ -2,6 +2,6 @@
     namespace miraccul\ticTacToe\View;
     function showGame()
     {
-        echo "This game";
+        echo "Game area...".PHP_EOL;
     }
 ?>

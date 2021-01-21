@@ -37,5 +37,10 @@
 * Для установки из Packagist
     * Перейти в каталог, в который Вы будете клонировать проект;
     * Выполнить команду `composer require miraccul/tic-tac-toe`;
-    * Перейти в каталог vendor/bin;
+    * Перейти в каталог bin;
     * Запустить файл tic-tac-toe.bat.
+
+* * *
+
+### Ссылки
+Packagist: https://packagist.org/packages/miraccul/tic-tac-toe

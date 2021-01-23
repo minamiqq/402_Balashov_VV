@@ -43,7 +43,7 @@
 
 1. Установить composer, если он не установлен;
 2. Перейти в каталог, в который вы будете клонировать проект;
-3. Выполнить команду `composer require vladislav/tic-tac-toe`;
+3. Выполнить команду `composer create-project miraccul/tic-tac-toe`;
 4. Перейти в каталог vendor/bin;
 5. Запустить файл tic-tac-toe.bat.
 
@@ -51,4 +51,4 @@
 
 ## Ссылки
 
-Packagist: <https://packagist.org/packages/vladislav/tic-tac-toe>
+Packagist: <https://packagist.org/packages/miraccul/tic-tac-toe>

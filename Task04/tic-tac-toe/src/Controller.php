@@ -9,7 +9,6 @@ namespace miraccul\ticTacToe\Controller;
     use function cli\prompt;
     use function cli\line;
     use function cli\out;
-
     use function miraccul\ticTacToe\View\showGameBoard;
     use function miraccul\ticTacToe\View\showMessage;
     use function miraccul\ticTacToe\View\getValue;
@@ -37,7 +36,8 @@ function startGame()
     }
 }
 
-function play($gameBoard) {
+function play($gameBoard)
+{
     $canContinue = true;
     do {
         initialize($gameBoard);
@@ -109,11 +109,10 @@ function gameLoop($board)
     } while (!$stopGame);
 
     $temp_mark = $board->getUserMarkup();
-    if ($endGameMsg == "Player '$temp_mark' wins the game."){
+    if ($endGameMsg == "Player '$temp_mark' wins the game.") {
         $result = 'ПОБЕДА';
         $board->endGame($gameId, $result, $db);
-    }
-    else{
+    } else {
         $result = 'ПОРАЖЕНИЕ';
         $board->endGame($gameId, $result, $db);
     }
@@ -160,14 +159,14 @@ function getCoords($board)
     $markup = $board->getUserMarkup();
     $name = $board->getUser();
     $coords = getValue("Enter coords for player '$markup' (player: '$name' ) (enter through - )");
-    if ($coords == "--exit"){
+    if ($coords == "--exit") {
         exit("Thanks for using");
     }
     $coords = explode("-", $coords);
-    $coords[0] = $coords[0]-1;
+    $coords[0] = $coords[0] - 1;
     if (isset($coords[1])) {
-        $coords[1] = $coords[1]-1;
-    } else {    
+        $coords[1] = $coords[1] - 1;
+    } else {
         throw new Exception("No second coordinate. Please try again.");
     }
     return $coords;

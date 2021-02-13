@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Student;
-use Exeption as Exeption;
 
 class StudentsList
 {

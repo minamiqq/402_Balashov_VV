@@ -5,6 +5,7 @@ namespace App\Tests;
 use PHPUnit\Framework\TestCase;
 use App\StudentsList;
 use App\Student;
+use \Exepton as Exeption;
 
 class StudentsListTest extends TestCase
 {
@@ -36,7 +37,7 @@ class StudentsListTest extends TestCase
 
     public function testLoad()
     {
-        $studentsList = new StudentsList();
+        $studentsList = new StudentsList;
         $studentsList -> load("output");
         $this -> assertSame(1, $studentsList -> count());
         $this -> assertInstanceOf(Student::class, $studentsList -> get(1));

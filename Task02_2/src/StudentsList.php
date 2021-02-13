@@ -21,9 +21,6 @@ class StudentsList
 
     public function get(int $n): Student
     {
-        if ($n <= 0 || $n > count($this -> students)) {
-            return "Недопоустимое значение";
-        }
         return $this -> students[$n - 1];
     }
 

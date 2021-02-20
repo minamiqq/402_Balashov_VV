@@ -33,7 +33,7 @@ class StackTest extends TestCase
     public function testTextRepresentation()
     {
         $stack = new Stack(5, 4, 3, 2, 1, "abra", 111111);
-        $this -> assertSame("[5->4->3->2->1->abra->111111]", $stack -> __toString());
+        $this -> assertSame("[111111->abra->1->2->3->4->5]", $stack -> __toString());
     }
 
     public function testCopy()

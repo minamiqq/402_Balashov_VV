@@ -51,8 +51,8 @@ class Stack implements StackInterface
     {
         $textRepresentationStack = "[";
         $arrow = "->";
-        for ($i = 0; $i < count($this -> stack); $i++) {
-            if ($i == count($this -> stack) - 1) {
+        for ($i = count($this -> stack) - 1; $i >= 0; $i--) {
+            if ($i == 0) {
                 $arrow = "";
             }
             $textRepresentationStack = $textRepresentationStack . $this -> stack[$i] . $arrow;

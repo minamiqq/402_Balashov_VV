@@ -94,7 +94,7 @@ class StudentsListTest extends TestCase
      */
 
     public function testValidAndRewind(StudentsList $studentsList)
-    {   
+    {
         $studentsList -> next();
         $this -> assertSame(false, $studentsList -> valid());
         $studentsList -> rewind();

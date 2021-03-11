@@ -38,9 +38,9 @@ class StudentsList implements Iterator
         $this -> students = unserialize(file_get_contents($fileName));
     }
 
-    public function current() 
+    public function current()
     {
-       return current($this -> students);
+        return current($this -> students);
     }
 
     public function key()

@@ -16,10 +16,10 @@ class ManufacturerFilter implements ProductFilteringStrategy
         $result = array();
         $manufacturer = $this -> manufacturer;
         foreach ($collection as $elem) {
-            if($elem -> manufacturer == $manufacturer) {
+            if ($elem -> manufacturer == $manufacturer) {
                 $result[] = $elem;
             }
         }
-    return $result;
+        return $result;
     }
 }

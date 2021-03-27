@@ -16,12 +16,12 @@ class MaxPriceFilter implements ProductFilteringStrategy
         $result = array();
         $price;
         foreach ($collection as $elem) {
-            if(isset($elem -> discount)) {
+            if (isset($elem -> discount)) {
                 $price = $elem -> price * (1 - $elem -> discount / 100);
             } else {
                 $price = $elem -> price;
             }
-            if($price <= $this -> maxPrice) {
+            if ($price <= $this -> maxPrice) {
                 $result[] = $elem;
             }
         }

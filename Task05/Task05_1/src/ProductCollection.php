@@ -13,7 +13,7 @@ class ProductCollection
         $this -> collection = $collection;
     }
 
-    public function getProductsArray() 
+    public function getProductsArray()
     {
         return $this -> collection;
     }

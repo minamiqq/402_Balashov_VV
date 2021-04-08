@@ -1,4 +1,4 @@
-function Vector(x, y, z) {
+export default function Vector(x, y, z) {
   this.x = x
   this.y = y
   this.z = z
@@ -35,5 +35,3 @@ Vector.prototype.vectorProduct = function (vector) {
 Vector.prototype.toString = function () {
   return `(${this.x};${this.y};${this.z})`
 }
-
-module.exports = Vector

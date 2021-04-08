@@ -1,4 +1,4 @@
-class Vector {
+export default class Vector {
   constructor(x, y, z) {
     this.x = x
     this.y = y
@@ -37,5 +37,3 @@ class Vector {
     return `(${this.x};${this.y};${this.z})`
   }
 }
-
-module.exports = Vector

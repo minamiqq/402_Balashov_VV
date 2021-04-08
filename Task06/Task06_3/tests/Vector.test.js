@@ -1,4 +1,4 @@
-const Vector = require('../src/index.js')
+import Vector from '../src/index.js'
 
 test('toString', () => {
   expect(new Vector(-1, 20, 3).toString()).toBe('(-1;20;3)')

@@ -1,4 +1,4 @@
-function createVector(x, y, z) {
+export default function createVector(x, y, z) {
   return {
     x,
     y,
@@ -39,5 +39,3 @@ function createVector(x, y, z) {
     },
   }
 }
-
-module.exports = createVector

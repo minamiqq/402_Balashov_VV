@@ -5,7 +5,7 @@ export default function createVector(x, y, z) {
     z,
 
     getLength() {
-      return Math.sqrt(x ** 2 + y ** 2 + z ** 2)
+      return Math.sqrt(this.x ** 2 + this.y ** 2 + this.z ** 2)
     },
     add(vector) {
       return createVector(
